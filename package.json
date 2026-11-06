@@ -1,6 +1,6 @@
 {
   "name": "dsh-rest-countdown",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "牛马休息倒计时 / Off-work countdown for DeepSeek Harness: a draggable resident floating card with adjustable opacity plus a sidebar page, live time left until quitting time, a workday progress bar, and a green greeting card once the day is done.",
   "license": "MIT",
