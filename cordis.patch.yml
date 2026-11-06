@@ -9,4 +9,4 @@
 # The row is a bare plugin by package name; nothing shipped is replaced.
 - insert:
     - id: off-work-countdown
-      name: 'dsh-off-work-countdown'
+      name: 'dsh-rest-countdown'

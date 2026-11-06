@@ -1,17 +1,17 @@
 {
-  "name": "dsh-off-work-countdown",
+  "name": "dsh-rest-countdown",
   "version": "1.0.0",
   "type": "module",
   "description": "牛马休息倒计时 / Off-work countdown for DeepSeek Harness: a draggable resident floating card with adjustable opacity plus a sidebar page, live time left until quitting time, a workday progress bar, and a green greeting card once the day is done.",
   "license": "MIT",
   "icon": "./icon.svg",
-  "homepage": "https://github.com/zxy29/dsh-off-work-countdown#readme",
+  "homepage": "https://github.com/zxy29/dsh-rest-countdown#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zxy29/dsh-off-work-countdown.git"
+    "url": "git+https://github.com/zxy29/dsh-rest-countdown.git"
   },
   "bugs": {
-    "url": "https://github.com/zxy29/dsh-off-work-countdown/issues"
+    "url": "https://github.com/zxy29/dsh-rest-countdown/issues"
   },
   "keywords": [
     "dsh",

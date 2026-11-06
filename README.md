@@ -1,4 +1,4 @@
-# 牛马休息倒计时 · dsh-off-work-countdown
+# 牛马休息倒计时 · dsh-rest-countdown
 
 > 一个挂在 DeepSeek Harness 界面上的下班倒计时：右侧常驻一张可拖动、可调透明度的小卡片；点开左侧栏入口，还有一页完整的大卡片和设置。
 
@@ -40,13 +40,13 @@
 在 DSH Desktop 的「设置 → 插件 → 添加插件」里填入：
 
 ```
-dsh-off-work-countdown
+dsh-rest-countdown
 ```
 
 或者用 CLI（`desktop` 是 Desktop 版本的 profile 名，其他版本换成你的 profile）：
 
 ```sh
-dsh plugin --profile desktop add dsh-off-work-countdown
+dsh plugin --profile desktop add dsh-rest-countdown
 ```
 
 装好后重启 DSH（或在插件页刷新），右下角就会多出倒计时卡片。
@@ -54,7 +54,7 @@ dsh plugin --profile desktop add dsh-off-work-countdown
 ### 方式二：直接从 GitHub 安装（不用发布 npm）
 
 ```sh
-dsh plugin --profile desktop add github:zxy29/dsh-off-work-countdown
+dsh plugin --profile desktop add github:zxy29/dsh-rest-countdown
 ```
 
 本插件是纯 JavaScript、没有构建步骤，所以 GitHub 安装不需要额外的构建许可。
@@ -63,7 +63,7 @@ dsh plugin --profile desktop add github:zxy29/dsh-off-work-countdown
 
 ```sh
 npm pack
-dsh plugin --profile desktop add ./dsh-off-work-countdown-1.0.0.tgz
+dsh plugin --profile desktop add ./dsh-rest-countdown-1.0.0.tgz
 ```
 
 ## 使用
@@ -90,7 +90,7 @@ dsh plugin --profile desktop add ./dsh-off-work-countdown-1.0.0.tgz
 ## 项目结构
 
 ```
-dsh-off-work-countdown/
+dsh-rest-countdown/
 ├── package.json        # 插件清单：dsh.bundle + dsh.client
 ├── cordis.patch.yml    # 插入一行 off-work-countdown 插件
 ├── index.js            # Host 半：空实现（倒计时完全在浏览器里算）
@@ -104,8 +104,8 @@ dsh-off-work-countdown/
 ## 本地开发
 
 ```sh
-git clone https://github.com/zxy29/dsh-off-work-countdown.git
-cd dsh-off-work-countdown
+git clone https://github.com/zxy29/dsh-rest-countdown.git
+cd dsh-rest-countdown
 # 直接装进当前 profile（会以 link 方式链接，改完刷新页面即可热重载）
 dsh plugin --profile desktop add ./
 ```
@@ -146,7 +146,7 @@ node scripts/set-owner.mjs <你的GitHub用户名>
 <a id="english"></a>
 ## English
 
-**dsh-off-work-countdown** is a [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) plugin that keeps an off-work countdown visible on the Harness UI.
+**dsh-rest-countdown** is a [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) plugin that keeps an off-work countdown visible on the Harness UI.
 
 - A resident floating card (bottom-right, draggable, position remembered) shows the live time left until quitting time with a workday progress bar.
 - After quitting time it turns into a green card: `Off work / Good work today. / Tomorrow 18:30 / 100%`; Friday evening points at Monday, weekends show a day-off state.
@@ -159,10 +159,10 @@ Requires DeepSeek Harness `>=0.2.0 <0.3.0`.
 
 ```sh
 # npm (after it is published)
-dsh plugin --profile desktop add dsh-off-work-countdown
+dsh plugin --profile desktop add dsh-rest-countdown
 
 # or straight from GitHub
-dsh plugin --profile desktop add github:zxy29/dsh-off-work-countdown
+dsh plugin --profile desktop add github:zxy29/dsh-rest-countdown
 ```
 
 Then restart DSH. Open the sidebar clock entry for settings; the floating card appears at the bottom-right corner.

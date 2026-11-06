@@ -25,7 +25,7 @@
  */
 
 window.__ModuleLoader__.load({
-  id: 'dsh-off-work-countdown',
+  id: 'dsh-rest-countdown',
   factory(require) {
     const React = require('react')
     const h = React.createElement
