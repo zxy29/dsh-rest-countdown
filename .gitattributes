@@ -1,0 +1,9 @@
+# Normalize text files to LF in the repository and in checkouts.
+* text=auto eol=lf
+
+# Keep artwork byte-for-byte.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.ico binary

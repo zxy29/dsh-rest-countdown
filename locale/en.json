@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Workhorse Rest Countdown",
+    "description": "A draggable countdown card resident on the Harness UI (position remembered, adjustable opacity that clears up on hover, collapsible to a small pill), plus a full page behind a left-sidebar entry: live time left until quitting time with a workday progress bar, then a green \"good work today\" card that points at the next workday's quitting time."
+  }
+}

@@ -1,0 +1,12 @@
+# Off-work countdown bundle patch.
+#
+# One row, one package, two faces:
+#   - the Host half (`exports["."]`, index.js) is inert: the countdown is computed
+#     from the browser clock, so nothing durable lives on the Host;
+#   - the browser half (`exports["./client"]`, client.js) renders the sidebar
+#     entry, the countdown page and the resident floating card.
+#
+# The row is a bare plugin by package name; nothing shipped is replaced.
+- insert:
+    - id: off-work-countdown
+      name: 'dsh-off-work-countdown'

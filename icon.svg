@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Workhorse rest countdown">
+  <title>Workhorse rest countdown</title>
+  <desc>Clock with a check mark: workhorse rest countdown</desc>
+  <defs>
+    <linearGradient id="off-work-bezel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#46D592"/>
+      <stop offset="1" stop-color="#0E9E58"/>
+    </linearGradient>
+  </defs>
+  <circle cx="31" cy="31" r="25" fill="url(#off-work-bezel)"/>
+  <circle cx="31" cy="31" r="19.5" fill="#F5FBF7"/>
+  <g stroke="#0B7A45" stroke-width="3.1" stroke-linecap="round" fill="none">
+    <path d="M31 19.5V31"/>
+    <path d="M31 31l8.4 5"/>
+    <path d="M31 14.4v2.6"/>
+    <path d="M31 45v2.6"/>
+    <path d="M14.4 31h2.6"/>
+    <path d="M45 31h2.6"/>
+  </g>
+  <circle cx="31" cy="31" r="2.6" fill="#0B7A45"/>
+  <circle cx="47" cy="47" r="11" fill="#0E9E58" stroke="#FFFFFF" stroke-width="3"/>
+  <path d="M41.6 47.1l3.5 3.6 6.6-7" fill="none" stroke="#FFFFFF" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

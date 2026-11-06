@@ -1,0 +1,18 @@
+# dependencies
+node_modules/
+
+# packed artifacts
+*.tgz
+
+# editors
+.vscode/
+.idea/
+*.swp
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# local env
+.env
+.env.*

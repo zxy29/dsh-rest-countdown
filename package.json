@@ -1,0 +1,65 @@
+{
+  "name": "dsh-off-work-countdown",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "牛马休息倒计时 / Off-work countdown for DeepSeek Harness: a draggable resident floating card with adjustable opacity plus a sidebar page, live time left until quitting time, a workday progress bar, and a green greeting card once the day is done.",
+  "license": "MIT",
+  "icon": "./icon.svg",
+  "homepage": "https://github.com/zxy29/dsh-off-work-countdown#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zxy29/dsh-off-work-countdown.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zxy29/dsh-off-work-countdown/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "off-work",
+    "countdown",
+    "overlay",
+    "sidebar"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "dsh": ">=0.2.0 <0.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "prepublishOnly": "npm run check"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-renderer"
+      ]
+    }
+  }
+}
